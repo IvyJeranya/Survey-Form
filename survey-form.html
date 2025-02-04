@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="/Projects/Survey Form/css/survey-form.css">
+</head>
+
+<body>
+  <!-- Main Title -->
+  <h1 id="title">Survey Form</h1>
+  
+  <!-- Description -->
+  <p id="description">Description</p>
+  
+  <!-- Survey Form -->
+  <form id="survey-form">
+    
+    <!-- Name Input -->
+    <label id="name-label" for="name">Name:</label>
+    <input id="name" type="text" placeholder="Enter your name" required></input>
+
+    <!-- Email Input -->
+    <label id="email-label" for="email">Email:</label>
+    <input id="email" type="email" placeholder="Enter your email" required></input>
+
+    <!-- Number Input -->
+    <label id="number-label" for="number">Number:</label>
+    <input id="number" type="number" min="18" max="100" placeholder="Number"></input>
+
+    <!-- Dropdown Menu -->
+    <label for="dropdown">Choose an option:</label>
+    <select id="dropdown">
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+    </select>
+
+    <!-- Preferred Contact Method -->
+    <p>Choose your preferred contact method:</p>
+    <div class="form-group">
+      <div class="radio-option">
+        <input type="radio" id="contact-email" name="contact-method" value="email">
+        <label for="contact-email">Email</label>
+      </div>
+      <div class="radio-option">
+        <input type="radio" id="contact-phone" name="contact-method" value="phone">
+        <label for="contact-phone">Phone</label>
+      </div>
+    </div>
+
+    <!-- Additional Options -->
+    <p>Additional options:</p>
+    <div class="form-group">
+      <div class="checkbox-option">
+        <input type="checkbox" id="option-newsletter" name="additional-options" value="newsletter">
+        <label for="option-newsletter">Subscribe to newsletter</label>
+      </div>
+      <div class="checkbox-option">
+        <input type="checkbox" id="option-updates" name="additional-options" value="updates">
+        <label for="option-updates">Receive updates</label>
+      </div>
+    </div>
+
+    <!-- Comments Section -->
+    <label for="comments">Additional comments:</label>
+    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here..."></textarea>
+
+    <!-- Submit Button -->
+    <input id="submit" type="submit" value="Submit">
+  </form>
+</body>
+</html>
